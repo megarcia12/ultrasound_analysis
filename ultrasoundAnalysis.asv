@@ -1,0 +1,20 @@
+% M3 Lab
+% ultrasoundAnalysis.m
+% Created 8 November 2022
+% Mario Garcia | nfq3bd@virginia.edu 
+
+close all; clear; clc;
+
+%% Data Import
+pathName = uigetdir('.mat') ; % Select folder containing data
+filePattern = fullfile(pathName,'*.mat') ;
+matFiles = dir(filePattern) ; % Finds mat files that will be imported
+for i = 1:length(matFiles) % Determines how many files will be imported
+    baseFileName = matFiles(i).name ; 
+    fullFileName = fullfile(pathName, baseFileName) ;
+    matdata = load(fullFileName) ;
+    tempName = strcat('matdata.name ;
+    assignin('base', tempName, matdata.deMVC)
+    clear matdata
+end
+
