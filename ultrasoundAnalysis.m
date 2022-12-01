@@ -15,10 +15,11 @@ for i = 1:length(matFiles) % Determines how many files will be imported
     baseFileName = matFiles(i).name ; 
     fullFileName = fullfile(pathName, baseFileName) ;
     matdata = load(fullFileName) ;
-tempName = strcat(convertCharsToStrings(sub),'_mCap_',num2str(i));
+tempName = strcat(convertCharsToStrings(sub),'_mCap_',num2str(i-1));
 assignin('base', tempName, matdata)
     clear matdata
 end
 clear baseFileName filePattern fullFileName i matFiles pathName tempName sub
 
 %% Next Steps
+% Start Here
