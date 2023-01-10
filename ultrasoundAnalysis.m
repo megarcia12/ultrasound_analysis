@@ -37,3 +37,5 @@ staticRANK(:,3) = M03_mCap_0.Markers.RANK(:,3);
 staticRHFBx = M03_mCap_0.Markers.RANK(:,1);
 staticRHFBy = M03_mCap_0.Markers.RANK(:,2);
 staticRHFBz = M03_mCap_0.Markers.RANK(:,3);
+
+%% Changes
